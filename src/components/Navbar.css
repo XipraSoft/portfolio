@@ -1,0 +1,45 @@
+.navbar {
+  background-color: rgb(32,36,45);
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  padding-left: 30px;
+   font-family: 'Monoton', cursive;
+   color: white;
+   
+}
+
+#part {
+  color:rgb(1,238,254)
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+   justify-content: flex-end;
+   margin-right: 100px;
+   font-size: large;
+   font-weight: bold;
+   padding-top: 10px;
+   
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links li a:hover {
+  color: rgb(1,238,254);
+ 
+}

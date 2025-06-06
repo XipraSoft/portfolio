@@ -1,0 +1,78 @@
+.services-section {
+  background-color: rgb(32,36,45); /* Dark background */
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+#service{
+  color :rgb(1, 238, 254)
+}
+.services-section h2 {
+  margin-bottom: 50px;
+  color: white; /* Cyan color for heading */
+  font-weight: bolder;
+  font-size: 37px;
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  background-color: rgb(50,56,70); /* Darker card background */
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  
+}
+.service-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  
+  border: 2px solid #00ffff; /* Cyan border on hover */
+  background-color: rgb(40,46,60); /* Slightly lighter on hover */
+}
+
+.service-card .icon {
+    font-size: 30px;
+    color: #00ffff; /* Cyan color for icons */
+    margin-right: 8px;
+}
+
+.service-card h3 {
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.service-card p {
+  color: #ccc;
+  margin-bottom: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 17px;
+}
+
+.service-card button {
+  background-color: #00ffff; /* Cyan button background */
+  color: #1a1a1a;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+  font-weight: bold;
+}
+
+.service-card button:hover {
+  background-color: #00c0c0; /* Slightly darker cyan on hover */
+  color: #fff; /* Change text color to white on hover */
+}

@@ -1,0 +1,80 @@
+.cover{
+    background-color: rgb(32,36,45);
+}
+#main{
+    text-align: center;
+    color: white;
+    margin-top: 60px;
+    font-size: 37px;
+}
+#me {
+    color: rgb(1, 238, 254);
+}
+
+.contact-form {
+    background-color:rgb(32,36,45);
+    color: #cbd5e0;
+    padding: 20px;
+    border-radius: 8px;
+    width: 650px;
+    margin: auto;
+    font-family: sans-serif;
+    padding-bottom: 60px;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4fd1c5;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.form-grid input, .form-grid textarea {
+    padding: 10px;
+    border: 1px solid #4a5568;
+    background-color: rgb(50,56,70);
+    color: #edf2f7;
+    border-radius: 4px;
+    width: 100%;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+.form-grid textarea {
+    grid-column: 1 / -1;
+    height: 170px;
+}
+
+.submit-button {
+    background-color: #4fd1c5;
+    color: #2d3748;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+.submit-button:hover {
+    transform: scale(1.02);
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .contact-form {
+        width: 90%;
+    }
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+}
