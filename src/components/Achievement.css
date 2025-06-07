@@ -1,12 +1,13 @@
-.project-container {
+
+.achieve-container {
   padding: 20px;
-  background-color:rgb(32,36,45);
+  background-color: rgb(50,56,70);
   overflow: hidden;
   text-align: center;
   padding-bottom: 90px;
 }
 
-.project-heading {
+.achieve-heading {
   font-size: 40px;
   color: white;
   margin-bottom: 30px;

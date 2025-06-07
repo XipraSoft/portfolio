@@ -3,7 +3,7 @@ import './Hero.css';
 import Typewriter from './Typewriter';
 
 const Hero = () => (
-  <div className="hero">
+  <div className="hero" id='home'>
     <div className="text">
       <h2 id='Hello'>Hello, It's me</h2>
       <h1>Usman Raza</h1>
@@ -15,10 +15,10 @@ const Hero = () => (
         <img src="5.png" alt="" />
         <img src="6.png" alt="" />
       </div>
-      <a href="#projects" className="btn">Contact Me</a>
+      <a href="#s" className="btn">Contact Me</a>
     </div>
     <div className="hero-image">
-      <img src="1.png" alt="Hero" />
+      <img src="19.png" alt="Hero" />
     </div>
   </div>
 );

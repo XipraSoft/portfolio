@@ -1,13 +1,12 @@
 import React, { useEffect, useRef } from 'react';
-import './Project.css';
+import './Achievement.css';
 
 const images = [
-  '7.png',
-  '8.png',
-  '9.png',
-  '10.png',
-  '11.png',
-  '12.png',
+  '13.png',
+  '14.png',
+  '15.png',
+  '16.png',
+ 
 ];
 
 const Project = () => {
@@ -33,8 +32,8 @@ const Project = () => {
   }, []);
 
   return (
-    <div className="project-container" id="project">
-      <h2 className="project-heading">Work <span id='part'>Showcase</span></h2>
+    <div  id="achievement" className="achieve-container" >
+      <h2 className="achieve-heading">Professional <span id='part'>Achievements</span></h2>
       <div className="carousel-wrapper">
         <div className="carousel-track" ref={trackRef}>
           {images.map((src, i) => (

@@ -6,6 +6,9 @@ import Services from './components/Services';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Project from './components/Project';
+import Achievement from './components/Achievement'; 
+import './App.css'; // Importing global styles
+
 
 function App() {
   return (
@@ -16,6 +19,7 @@ function App() {
       <Services />
       <Skills/>
       <Project />
+      <Achievement/>
       <Contact />
     </>
   );

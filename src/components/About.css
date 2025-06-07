@@ -4,48 +4,52 @@ body {
   font-family: 'Arial', sans-serif;
   background-color: rgb(32, 36, 45);
 }
+
 .about {
   display: flex;
   justify-content: space-between;
-  
   flex-wrap: wrap; /* allow wrapping on smaller screens */
   padding: 0px 80px;
-  background-color: rgb(50,56,70);
+  background-color: rgb(50, 56, 70);
   box-sizing: border-box;
-  gap: 40px; 
+  gap: 40px;
+  padding-bottom: 100px;
+  margin-bottom: 30px;
 }
+
 .about .text {
   max-width: 600px;
-   /* flexible and responsive */
   color: white;
-  margin-top: 100px;
+  margin-top: 20px;
   margin-right: 100px;
 }
+
 .about h2 {
-  font-size: 32px;
+  font-size: 40px;
   margin-bottom: 8px;
   font-weight: bold;
-  font-size: 40px;
 }
 
 .about p {
   max-width: 600px;
   margin: 0 auto;
   font-size: 18px;
-  color:#ccc;
+  color: #ccc;
 }
-#Me{
+
+#Me {
   color: rgb(1, 238, 254);
 }
-.about h3{
+
+.about h3 {
   font-size: 25px;
   font-weight: bolder;
   margin-top: 0px;
-  
-} 
+}
+
 .btn {
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 40px;
   padding: 12px 36px;
   background-color: rgb(1, 238, 254);
   color: rgb(32, 36, 45);
@@ -59,5 +63,53 @@ body {
 
 .btn:hover {
   transform: scale(1.05);
-  color: white; 
+  color: white;
+}
+
+.about img {
+  width: 330px;
+  height: 380px;
+  border-radius: 20px;
+  max-width: 100%;
+  margin-top: 70px;
+  display: block;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 900px) {
+  .about {
+    padding: 0 40px;
+    gap: 20px;
+  }
+
+  .about .text {
+    margin-right: 0;
+    max-width: 100%;
+  }
+
+  .about img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about {
+    flex-direction: column;
+    padding: 0 20px 40px;
+  }
+
+  .about h2 {
+    font-size: 32px;
+  }
+
+  .about h3 {
+    font-size: 20px;
+  }
+
+  .btn {
+    font-size: 20px;
+    padding: 10px 30px;
+  }
 }
