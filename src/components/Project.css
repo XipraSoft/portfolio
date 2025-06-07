@@ -1,0 +1,29 @@
+.project-container {
+  padding: 20px;
+  text-align: center;
+  background-color: rgb(50,56,70);
+}
+
+.project-heading {
+    padding-bottom: 30px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  padding-top: 20px;
+  color: white;
+  font-size: 40px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 images per row */
+  gap: 20px;
+  justify-items: center;
+}
+
+.image-grid img {
+  width: 350px;
+  height: 250px;
+  
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
