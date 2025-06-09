@@ -38,7 +38,7 @@
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   margin-right: 30px; /* replaced gap with margin */
-  border: 3px solid rgb(1, 238, 254); /* Cyan border */
+  border: 5px solid rgb(1, 238, 254); /* Cyan border */
 
 }
 

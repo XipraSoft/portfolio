@@ -40,6 +40,12 @@
   border: 3px solid rgb(1, 238, 254); /* Cyan border */
 
 }
+.carousel-track img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: invert(1) hue-rotate(180deg);
+  border: 6px solid rgb(1, 238, 254);
+}
 
 .carousel-track img:last-child {
   margin-right: 0;
