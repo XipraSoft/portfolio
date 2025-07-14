@@ -1,0 +1,17 @@
+.typewriter {
+  font-weight: bold;
+  color: rgb(1, 238, 254);
+  white-space: nowrap;
+  font-size: inherit;
+}
+
+.typewriter-cursor {
+  border-right: 2px solid rgb(1, 238, 254);
+  margin-left: 2px;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}

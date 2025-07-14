@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './Typewriter.css';
 
 const Typewriter = () => {
   const texts = [
@@ -45,14 +46,10 @@ const Typewriter = () => {
   }, [charIndex, isDeleting, textIndex, texts, pause]);
 
   return (
-    <div style={{ fontWeight: 'bold', fontSize: '40px', color: 'rgb(1, 238, 254)', whiteSpace: 'nowrap' }}>
+    <span className="typewriter">
       {displayText}
-      <span style={{
-        borderRight: '2px solid rgb(1, 238, 254)',
-        marginLeft: '2px',
-        animation: 'blink 1s step-end infinite'
-      }}>&nbsp;</span>
-    </div>
+      <span className="typewriter-cursor">&nbsp;</span>
+    </span>
   );
 };
 
