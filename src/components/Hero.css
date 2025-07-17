@@ -56,7 +56,6 @@ body {
   font-size: 40px;
   font-weight: bold;
   display: flex;
-  gap: 8px;
   margin-bottom: 0;
   padding-bottom: 0;
 }
@@ -191,6 +190,8 @@ body {
     padding: 10px 28px;
   }
 }
+
+/* Mobile Optimization */
 @media (max-width: 600px) {
   .hero {
     padding: 80px 10px 30px;
@@ -200,8 +201,10 @@ body {
   .text {
     padding-top: 10px;
     max-width: 100%;
-    text-align: left;
-    align-items: flex-start;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .hero h2#Hello {
@@ -214,58 +217,39 @@ body {
 
   .hero h1 {
     font-size: 28px;
-    margin-bottom: 6px;
-    font-weight: 700;
-    color: #fff;
-    letter-spacing: 1px;
+    margin-bottom: 0 !important;   /* 🚫 No gap below Usman Raza */
     line-height: 1.1;
-    text-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    letter-spacing: 1px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   }
 
   #developer {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
+    margin-top: 4px !important;   /* ✅ Reduce top margin */
+    line-height: 1;
     color: #01eefe;
-    margin-bottom: 0;
-    padding-bottom: 0;
-    min-height: 22px;
     display: flex;
     align-items: center;
-    gap: 6px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  #developer span {
-    min-width: 90px;
-    display: inline-block;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-}
-@media (max-width: 600px) {
-  .hero {
-    padding: 80px 10px 30px;
-    gap: 0;
-  }
-
-  .text {
-    padding-top: 10px;
-    max-width: 100%;
-    text-align: center;           /* Center all text */
-    align-items: center;          /* Center flex children */
-    display: flex;
-    flex-direction: column;
-  }
-
-  .hero h2#Hello,
-  .hero h1,
-  #developer,
-  .hero h3 {
-    text-align: center;           /* Center each heading */
+    justify-content: center;
+    flex-wrap: nowrap;
     width: 100%;
+    text-align: center;
+    gap: 2px;
+  }
+
+  .typewriter-wrapper {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    line-height: 1.2;
+    font-size: 24px;
+    color: #01eefe;
+  }
+
+  .hero h3 {
+    font-size: 14px;
+    margin-top: 16px;
+    padding: 0 8px;
   }
 
   .social-icons {
@@ -283,81 +267,47 @@ body {
     display: block;
     align-self: center;
   }
+
+  /* Force override for nested spacing */
+  .typewriter-wrapper * {
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1.1 !important;
+  }
 }
+/* === MOBILE FIX FOR NAME + TYPEWRITER SPACING === */
 @media (max-width: 600px) {
-  /* ...existing code... */
+  .hero h1 {
+    margin-bottom: 4px !important;  /* reduce spacing below name */
+  }
 
   #developer {
-    font-size: 16px;
-    font-weight: 600;
-    color: #fff;
-    margin-bottom: 0;
-    padding-bottom: 0;
-    min-height: 22px;
-    display: flex;
-    align-items: center;
-    justify-content: center;   /* <-- Center the whole line */
-    gap: 6px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    width: 100%;              /* Ensure it takes full width for centering */
-    text-align: center;       /* Fallback for text */
+    margin-top: 0 !important;       /* eliminate extra spacing above typewriter */
+    padding-top: 0 !important;
+    gap: 0 !important;
+    line-height: 1 !important;
   }
 
-  #developer span {
-    min-width: 90px;
-    display: inline-block;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-}
-/* ...existing code... */
-
-/* By default, keep And I'm and typewriter inline */
-#developer {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
-
-/* Hide the mobile break by default */
-.mobile-break {
-  display: none;
-}
-
-/* Mobile view: break line after And I'm, center both lines */
-@media (max-width: 600px) {
-  #developer {
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 0;
-    width: 100%;
-    text-align: center;
-  }
-  .and-im {
-    display: block;
-    width: 100%;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 600;
-    margin-bottom: 2px;
-    text-align: center;
-  }
-  .mobile-break {
-    display: block;
-  }
   .typewriter-wrapper {
-    display: block;
-    width: 100%;
-    color: rgb(1, 238, 254);
-    font-size: 30px;
-    font-weight: 600;
-    text-align: right; /* <-- Not centered */
-    margin-left: 0;   /* Remove any centering margin */
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  .typewriter {
+    line-height: 1;
+    font-size: 16px;
+  }
+
+  .hero h1 + #developer {
+    margin-top: 0 !important;
+  }
+
+  /* Hide line break between name and typewriter */
+  .mobile-break {
+    display: none !important;
+  }
+
+  .and-im {
+    display: none !important;  /* hide “And I’m” for mobile */
   }
 }
