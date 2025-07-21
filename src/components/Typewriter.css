@@ -3,6 +3,7 @@
   color: rgb(1, 238, 254);
   white-space: nowrap;
   font-size: inherit;
+  margin-left: 15px;
 }
 
 .typewriter-cursor {
