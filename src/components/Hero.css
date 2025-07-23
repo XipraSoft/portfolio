@@ -197,6 +197,9 @@ body {
     padding: 80px 10px 30px;
     gap: 0;
   }
+.hero h2 {
+  font-size: 20px;
+}
 
   .text {
     padding-top: 10px;
@@ -208,11 +211,18 @@ body {
   }
 
   .hero h2#Hello {
-    font-size: 16px;
+    font-size: 10px;
     margin-bottom: 4px;
     color: #01eefe;
     letter-spacing: 1px;
     font-weight: 600;
+  }
+  .hero-greeting{
+     font-size: 10px;
+    margin-bottom: 4px;
+    color: #01eefe;
+    letter-spacing: 1px;
+    font-weight: 600
   }
 
   .hero h1 {

@@ -33,6 +33,7 @@ const Project = () => {
   }, []);
 
   return (
+    
     <div className="project-container" id="project">
       <h2 className="project-heading">Work <span id='part'>Showcase</span></h2>
       <div className="carousel-wrapper">

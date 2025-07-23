@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import './Achievement.css';
 
+
 const images = [
   '13.png',
   '14.png',
@@ -32,6 +33,7 @@ const Project = () => {
   }, []);
 
   return (
+   
     <div  id="achievement" className="achieve-container" >
       <h2 className="achieve-heading">Professional <span id='part'>Achievements</span></h2>
       <div className="carousel-wrapper">
@@ -42,6 +44,7 @@ const Project = () => {
         </div>
       </div>
     </div>
+   
   );
 };
 

@@ -1,7 +1,9 @@
 import React from 'react';
 import './Skills.css';
 
+
 const Skills = () => (
+   
   <div id="skills" className="skills">
     <h2>
       My Skills <span id="stack">Stack</span>
@@ -35,6 +37,7 @@ I thrive in collaborative environments and value clear communication throughout 
       </div>
     </div>
   </div>
+
 );
 
 export default Skills;
