@@ -10,22 +10,19 @@ const Achievement = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       if (trackRef.current) {
-        // Update the active index to the next image in the sequence
         setActiveIndex((prevIndex) => (prevIndex + 1) % images.length);
 
         const track = trackRef.current;
         const firstImage = track.children[0];
 
-        // Start the slide animation
         track.style.transition = 'transform 0.6s ease';
-        track.style.transform = 'translateX(-370px)'; // Slide left by one card width + margin
+        track.style.transform = 'translateX(-370px)';
 
-        // After the transition ends, move the card and reset the position
         setTimeout(() => {
-          track.style.transition = 'none'; // Disable transition for the reset
-          track.appendChild(firstImage); // Move the first image to the end
-          track.style.transform = 'translateX(0)'; // Instantly reset position
-        }, 600); // This should match the transition duration
+          track.style.transition = 'none'; 
+          track.appendChild(firstImage);
+          track.style.transform = 'translateX(0)'; 
+        }, 600); 
       }
     }, 2500);
 
@@ -45,7 +42,7 @@ const Achievement = () => {
         </div>
       </div>
 
-      {/* Dots for carousel navigation */}
+      {}
       <div className="carousel-dots">
         {images.map((_, index) => (
           <span

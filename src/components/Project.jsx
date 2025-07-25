@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'; // Import useState
+import React, { useEffect, useRef, useState } from 'react'; 
 import './Project.css';
 
 const images = [
@@ -12,16 +12,13 @@ const images = [
 
 const Project = () => {
   const trackRef = useRef(null);
-  // 1. Add state to track the active slide index
+ 
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
       if (trackRef.current) {
-        // 2. Update the active index for the *next* slide before the animation starts
-        // The image that is currently at index 0 is the one moving out.
-        // The one that is at index 1 is moving into the first position.
-        // So we calculate the next active index based on the current one.
+      
         setActiveIndex((prevIndex) => (prevIndex + 1) % images.length);
 
         const track = trackRef.current;

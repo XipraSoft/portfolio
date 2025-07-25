@@ -1,5 +1,5 @@
 .services-section {
-  background-color: rgb(32,36,45); /* Dark background */
+  background-color: rgb(32,36,45); 
   color: #fff;
   padding: 40px 20px;
   text-align: center;
@@ -11,7 +11,7 @@
 }
 .services-section h2 {
   margin-bottom: 50px;
-  color: white; /* Cyan color for heading */
+  color: white; 
   font-weight: bolder;
   font-size: 37px;
 }
@@ -24,7 +24,7 @@
 }
 
 .service-card {
-  background-color: rgb(50,56,70); /* Darker card background */
+  background-color: rgb(50,56,70); 
   padding: 20px;
   border-radius: 8px;
   width: 300px;
@@ -45,13 +45,13 @@
   transform: scale(1.03);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   
-  border: 4px solid #00ffff; /* Cyan border on hover */
-  background-color: rgb(16, 19, 27); /* Slightly lighter on hover */
+  border: 4px solid #00ffff; 
+  background-color: rgb(16, 19, 27); 
 }
 
 .service-card .icon {
     font-size: 30px;
-    color: #00ffff; /* Cyan color for icons */
+    color: #00ffff; 
     margin-right: 8px;
 }
 
@@ -70,7 +70,7 @@
 }
 
 .service-card button {
-  background-color: #00ffff; /* Cyan button background */
+  background-color: #00ffff; 
   color: #1a1a1a;
   border: none;
   padding: 10px 15px;
@@ -82,6 +82,6 @@
 }
 
 .service-card button:hover {
-  background-color: #00c0c0; /* Slightly darker cyan on hover */
-  color: #fff; /* Change text color to white on hover */
+  background-color: #00c0c0; 
+  color: #fff;
 }

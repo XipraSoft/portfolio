@@ -18,7 +18,7 @@
 }
 
 .carousel-wrapper {
-  width: 1150px; /* 3 × 370px */
+  width: 1150px; 
   overflow: hidden;
   margin: 0 auto;
   position: relative;
@@ -51,7 +51,6 @@
   margin-right: 0;
 }
 
-/* 4. Add styles for the dots */
 .carousel-dots {
   text-align: center;
   margin-top: 25px;
@@ -63,10 +62,10 @@
   width: 14px;
   border-radius: 50%;
   margin: 0 7px;
-  background-color: white; /* Default color */
+  background-color: white; 
   transition: background-color 0.3s ease;
 }
 
 .active-dot {
-  background-color: rgb(1, 238, 254); /* Active "neon" color */
+  background-color: rgb(1, 238, 254); 
 }

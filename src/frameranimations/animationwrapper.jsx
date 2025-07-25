@@ -1,5 +1,4 @@
 
-// src/components/AnimatedWrapper.jsx
 import React, { useState, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';

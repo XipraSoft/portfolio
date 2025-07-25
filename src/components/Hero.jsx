@@ -1,8 +1,8 @@
-// src/components/Hero/Hero.jsx
 import React from 'react';
 import './Hero.css';
 import Typewriter from './Typewriter';
 import { motion } from 'framer-motion';
+
 
 const Hero = ({ animationVariant }) => (
   <motion.div

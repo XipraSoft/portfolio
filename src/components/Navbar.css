@@ -1,4 +1,3 @@
-/* Navbar base styles */
 .navbar {
   background-color: rgb(32, 36, 45);
   padding: 10px 20px;
@@ -34,7 +33,7 @@
   color: rgb(1, 238, 254);
 }
 
-/* Hamburger menu - hidden by default */
+
 .menu-toggle {
   display: none;
   flex-direction: column;
@@ -46,7 +45,7 @@
   border: none;
   cursor: pointer;
   z-index: 1100;
-  margin-right: 12px; /* gap from the end */
+  margin-right: 12px; 
 }
 
 .menu-toggle .bar {
@@ -58,7 +57,6 @@
   transition: 0.3s;
 }
 
-/* Nav links - desktop */
 .nav-links {
   list-style: none;
   display: flex;
@@ -74,7 +72,6 @@
   box-shadow: none;
 }
 
-/* Nav link button styles (applies to both desktop and mobile) */
 .nav-links li a {
   color: white;
   text-decoration: none;
@@ -90,7 +87,6 @@
   background: rgba(1, 238, 254, 0.08);
 }
 
-/* Responsive styles */
 @media screen and (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -100,7 +96,7 @@
 
   .navbar-header {
     width: 100%;
-    padding-right: 8px; /* extra gap for hamburger */
+    padding-right: 8px; 
   }
 
   .menu-toggle {
@@ -163,7 +159,6 @@
     color: rgb(1, 238, 254) !important;
   }
 }
-/* Add margin to the last nav link (Contact) in desktop view */
 .nav-links li:last-child {
-  margin-right: 16px; /* Adjust as needed */
+  margin-right: 16px; 
 }

@@ -9,7 +9,7 @@ import Project from './components/Project';
 import Achievement from './components/Achievement'; 
 import AnimatedWrapper from './frameranimations/animationwrapper';
 import { fadeUp, fadeRight } from './frameranimations/fade';
-import './App.css'; // Importing global styles
+import './App.css'; 
 
 
 
