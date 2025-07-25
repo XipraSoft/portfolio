@@ -3,8 +3,10 @@ import './Hero.css';
 import Typewriter from './Typewriter';
 import { motion } from 'framer-motion';
 
+const handleNavClick = () => setMenuOpen(false);
 
 const Hero = ({ animationVariant }) => (
+   
   <motion.div
     className="hero"
     id="home"
@@ -34,14 +36,15 @@ const Hero = ({ animationVariant }) => (
       </motion.h3>
 
       <motion.div className="social-icons" variants={animationVariant}>
-        <img src="3.png" alt="" loading="lazy" />
-        <img src="4.png" alt="" loading="lazy" />
-        <img src="5.png" alt="" loading="lazy" />
+        <img src="3.png" alt="" loading="lazy"  />
+    <a href='https://www.linkedin.com/in/muhammadusmanrazasipra/' target='blank'> <img src="4.png" alt="" loading="lazy" /></a>
+        <a href='https://github.com/XipraSoft' target='blank'><img src="5.png" alt="" loading="lazy" /></a>
         <img src="6.png" alt="" loading="lazy" />
       </motion.div>
 
       <motion.a
-        href="#s"
+        href="#contact"
+        onClick={handleNavClick}
         className="btn"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}

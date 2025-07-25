@@ -22,7 +22,12 @@ const About = () => {
             Fueled by passion, driven by innovation — I code to create meaningful change.
             I thrive in dynamic environments, constantly pushing boundaries through technology.
           </p>
-          <a href="#projects" className="btn">Resume</a>
+          <a   onClick={() => {
+    const link = document.createElement('a');
+    link.href = '/docs/ReactCV.pdf';
+    link.download = 'ReactCV.pdf';
+    link.click();   
+  }} href="#projects" className="btn">Resume</a>
         </div>
       </div>
    
