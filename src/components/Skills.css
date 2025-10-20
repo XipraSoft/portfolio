@@ -58,10 +58,8 @@
   height: 100%;
   background-color: rgb(1, 238, 254);
   border-radius: 10px;
-  transition: width 0.5s ease;
+  transition: width 1.2s ease-out;
 }
-
-
 
 @media (max-width: 768px) {
   .skills-content {
